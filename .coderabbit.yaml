@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+
+language: ja-JP
+
+reviews:
+  profile: assertive
+  request_changes_workflow: true
+  high_level_summary: true
+  sequence_diagrams: true
+  collapse_walkthrough: false
+  poem: false
+  auto_review:
+    enabled: true
+    ignore_title_keywords:
+      - "WIP"
+    drafts: false
+  path_instructions:
+    - path: "src/sample/**"
+      instructions: |
+        このパスのコードをレビューする際は、リポジトリ内の docs/guideline/sample.md を参照し、
+        そのガイドラインに準拠しているかを重点的に確認してください。
